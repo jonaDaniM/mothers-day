@@ -113,6 +113,10 @@ button {
   padding: clamp(30px, 5vw, 68px);
 }
 
+.mobile-photo {
+  display: none;
+}
+
 .kicker {
   color: var(--rose-dark);
   font-size: 0.8rem;
@@ -230,7 +234,7 @@ h1 {
 @media (max-width: 860px) {
   body {
     align-items: start;
-    padding: 14px;
+    padding: 10px;
   }
 
   .stage {
@@ -239,19 +243,28 @@ h1 {
   }
 
   .photo-shell {
-    aspect-ratio: 4 / 5;
-    border-radius: 24px 24px 0 0;
-    min-height: 0;
+    display: none;
   }
 
   .message-panel {
     border-left: 1px solid rgba(255, 255, 255, 0.78);
-    border-radius: 0 0 24px 24px;
-    padding: 28px;
+    border-radius: 24px;
+    gap: 16px;
+    padding: 14px 18px 22px;
+  }
+
+  .mobile-photo {
+    aspect-ratio: 4 / 3;
+    background: #211816;
+    border-radius: 18px;
+    display: block;
+    height: auto;
+    object-fit: contain;
+    width: 100%;
   }
 
   h1 {
-    font-size: clamp(2.1rem, 11vw, 3.7rem);
+    font-size: clamp(2rem, 10vw, 3.35rem);
     max-width: 10ch;
   }
 
@@ -266,12 +279,12 @@ h1 {
 
 @media (max-width: 460px) {
   body {
-    padding: 10px;
+    padding: 8px;
   }
 
   .message-panel {
-    gap: 18px;
-    padding: 24px 20px;
+    gap: 14px;
+    padding: 12px 14px 20px;
   }
 
   #slideMessage {

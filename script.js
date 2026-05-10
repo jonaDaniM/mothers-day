@@ -59,6 +59,7 @@ const slides = [
 
 const photo = document.querySelector("#slidePhoto");
 const backdrop = document.querySelector("#slideBackdrop");
+const preview = document.querySelector("#slidePreview");
 const kicker = document.querySelector("#kicker");
 const title = document.querySelector("#slideTitle");
 const message = document.querySelector("#slideMessage");
@@ -99,7 +100,9 @@ function showSlide(nextIndex) {
   window.setTimeout(() => {
     photo.src = slide.image;
     backdrop.src = slide.image;
+    preview.src = slide.image;
     photo.alt = slide.title;
+    preview.alt = slide.title;
     kicker.textContent = slide.kicker;
     title.textContent = slide.title;
     message.textContent = slide.message;
