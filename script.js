@@ -53,7 +53,7 @@ const slides = [
     kicker: "Feliz Día de las Madres",
     title: "We Love You So Much",
     message:
-      "Mom, we hope today reminds you how treasured you are. Thank you for being our guide, our comfort, and the heart of our family.",
+      "Mom, we hope today reminds you how treasured you are. Thank you for being our guide, our comfort, and the heart of our family. Mis hermanos y yo tenemos una cena especial planeada para ti.",
   },
 ];
 
