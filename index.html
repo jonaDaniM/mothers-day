@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Happy Mother's Day</title>
+    <title>Feliz Día de las Madres</title>
     <meta
       name="description"
-      content="A Mother's Day slideshow full of love, gratitude, and family memories."
+      content="Un slideshow del Día de las Madres lleno de amor, gratitud y recuerdos familiares."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,34 +18,34 @@
   </head>
   <body>
     <main class="app" aria-live="polite">
-      <section class="stage" aria-label="Mother's Day photo slideshow">
+      <section class="stage" aria-label="Slideshow del Día de las Madres">
         <div class="photo-shell">
           <img id="slideBackdrop" class="photo-backdrop" src="IMG_9198.jpg" alt="" aria-hidden="true" />
-          <img id="slidePhoto" class="photo-main" src="IMG_9198.jpg" alt="Family memory" />
+          <img id="slidePhoto" class="photo-main" src="IMG_9198.jpg" alt="Recuerdo familiar" />
           <div class="soft-glow" aria-hidden="true"></div>
         </div>
 
         <article class="message-panel">
           <p class="kicker" id="kicker">Para la mejor mamá</p>
-          <h1 id="slideTitle">Happy Mother's Day, Mom</h1>
+          <h1 id="slideTitle">Feliz Día de las Madres, Mamá</h1>
           <p id="slideMessage">
-            Today is for you: your love, your strength, and the way you make
-            home feel warm no matter where we are.
+            Hoy es para ti: por tu amor, tu fuerza y la manera en que siempre
+            haces que la casa se sienta llena de cariño.
           </p>
 
-          <div class="controls" aria-label="Slideshow controls">
-            <button class="icon-button" id="prevButton" type="button" aria-label="Previous slide">
+          <div class="controls" aria-label="Controles del slideshow">
+            <button class="icon-button" id="prevButton" type="button" aria-label="Slide anterior">
               <span aria-hidden="true">←</span>
             </button>
             <button class="next-button" id="nextButton" type="button">
-              <span>Next memory</span>
+              <span>Siguiente recuerdo</span>
               <span aria-hidden="true">→</span>
             </button>
           </div>
         </article>
       </section>
 
-      <section class="slide-footer" aria-label="Slideshow progress">
+      <section class="slide-footer" aria-label="Progreso del slideshow">
         <p id="counter">1 / 8</p>
         <div class="dots" id="dots"></div>
       </section>

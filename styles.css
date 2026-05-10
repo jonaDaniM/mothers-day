@@ -124,10 +124,11 @@ button {
 
 h1 {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2.6rem, 6vw, 5.8rem);
-  line-height: 0.94;
+  font-size: clamp(2.45rem, 5.1vw, 4.95rem);
+  line-height: 0.98;
   margin: 0;
-  max-width: 8ch;
+  max-width: 10.5ch;
+  overflow-wrap: anywhere;
 }
 
 #slideMessage {
@@ -250,8 +251,8 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(2.25rem, 13vw, 4rem);
-    max-width: 9ch;
+    font-size: clamp(2.1rem, 11vw, 3.7rem);
+    max-width: 10ch;
   }
 
   .controls {

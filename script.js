@@ -2,58 +2,58 @@ const slides = [
   {
     image: "IMG_9198.jpg",
     kicker: "Para la mejor mamá",
-    title: "Happy Mother's Day, Mom",
+    title: "Feliz Día de las Madres, Mamá",
     message:
-      "Today is for you: your love, your strength, and the way you make home feel warm no matter where we are.",
+      "Hoy es para ti: por tu amor, tu fuerza y la manera en que siempre haces que la casa se sienta llena de cariño.",
   },
   {
     image: "IMG_3851.jpg",
     kicker: "Gracias por todo",
-    title: "Thank You for Supporting Us",
+    title: "Gracias por apoyarnos siempre",
     message:
-      "Thank you for being supportive through every season, every dream, and every hard day. Your belief in us has carried us more than you know.",
+      "Gracias por apoyarnos en cada etapa, en cada sueño y en cada día difícil. Tu confianza en nosotros nos ha dado más fuerza de la que imaginas.",
   },
   {
     image: "IMG_8433.jpg",
     kicker: "Con mucho amor",
-    title: "You Love So Deeply",
+    title: "Tu amor nos cuida",
     message:
-      "Thank you for always showing my brothers and me so much love. You make each of us feel seen, protected, and endlessly cared for.",
+      "Gracias por siempre demostrarnos tanto amor a mis hermanos y a mí. Nos haces sentir vistos, protegidos y cuidados de una forma que nunca olvidamos.",
   },
   {
     image: "IMG_4982.jpg",
     kicker: "Nuestro corazón",
-    title: "You Are Our Home",
+    title: "Tú eres nuestro hogar",
     message:
-      "No matter how much life changes, your voice, your hugs, and your heart have always been the place we can come back to.",
+      "No importa cuánto cambie la vida, tu voz, tus abrazos y tu corazón siempre han sido el lugar al que podemos regresar.",
   },
   {
     image: "IMG_3959.jpg",
     kicker: "Fuerte y dulce",
-    title: "Your Strength Inspires Us",
+    title: "Tu fuerza nos inspira",
     message:
-      "You have shown us what it means to keep going with grace. Your courage, patience, and faith have shaped who we are becoming.",
+      "Nos has enseñado lo que significa seguir adelante con gracia. Tu valor, tu paciencia y tu fe han formado la persona que cada uno de nosotros está llegando a ser.",
   },
   {
     image: "IMG_4670.jpg",
     kicker: "La reina de la familia",
-    title: "You Make Life Beautiful",
+    title: "Haces la vida más bonita",
     message:
-      "Thank you for the little things that are never really little: the meals, the laughs, the advice, the prayers, and the love tucked into everything.",
+      "Gracias por esas cosas que parecen pequeñas, pero significan todo: las comidas, las risas, los consejos, las oraciones y el amor que pones en todo.",
   },
   {
     image: "IMG_7948.jpg",
     kicker: "Siempre con nosotros",
-    title: "We Carry Your Love",
+    title: "Llevamos tu amor con nosotros",
     message:
-      "Everywhere we go, we carry what you taught us: to care for family, to work hard, to stay humble, and to love with our whole hearts.",
+      "A donde vayamos, llevamos lo que nos enseñaste: cuidar a la familia, trabajar duro, mantenernos humildes y amar con todo el corazón.",
   },
   {
     image: "IMG_8924.jpg",
     kicker: "Feliz Día de las Madres",
-    title: "We Love You So Much",
+    title: "Te queremos muchísimo",
     message:
-      "Mom, we hope today reminds you how treasured you are. Thank you for being our guide, our comfort, and the heart of our family. Mis hermanos y yo tenemos una cena especial planeada para ti.",
+      "Mamá, esperamos que hoy recuerdes lo importante y amada que eres. Gracias por ser nuestra guía, nuestro consuelo y el corazón de nuestra familia. Mis hermanos y yo tenemos una cena especial planeada para ti.",
   },
 ];
 
@@ -77,7 +77,7 @@ function renderDots() {
     const dot = document.createElement("button");
     dot.className = "dot";
     dot.type = "button";
-    dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+    dot.setAttribute("aria-label", `Ir al slide ${index + 1}`);
     dot.addEventListener("click", () => showSlide(index));
     dots.appendChild(dot);
   });
