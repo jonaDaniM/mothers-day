@@ -14,14 +14,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="photos/IMG_9198.jpg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="app" aria-live="polite">
       <section class="stage" aria-label="Slideshow del Día de las Madres">
         <div class="photo-shell">
-          <img id="slideBackdrop" class="photo-backdrop" src="IMG_9198.jpg" alt="" aria-hidden="true" />
-          <img id="slidePhoto" class="photo-main" src="IMG_9198.jpg" alt="Recuerdo familiar" />
+          <img id="slideBackdrop" class="photo-backdrop" src="photos/IMG_9198.jpg" alt="" aria-hidden="true" />
+          <img
+            id="slidePhoto"
+            class="photo-main"
+            src="photos/IMG_9198.jpg"
+            alt="Recuerdo familiar"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
           <div class="soft-glow" aria-hidden="true"></div>
         </div>
 

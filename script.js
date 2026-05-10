@@ -1,55 +1,55 @@
 const slides = [
   {
-    image: "IMG_9198.jpg",
+    image: "photos/IMG_9198.jpg",
     kicker: "Para la mejor mamá",
     title: "Feliz Día de las Madres, Mamá",
     message:
       "Hoy es para ti: por tu amor, tu fuerza y la manera en que siempre haces que la casa se sienta llena de cariño.",
   },
   {
-    image: "IMG_3851.jpg",
+    image: "photos/IMG_3851.jpg",
     kicker: "Gracias por todo",
     title: "Gracias por apoyarnos siempre",
     message:
       "Gracias por apoyarnos en cada etapa, en cada sueño y en cada día difícil. Tu confianza en nosotros nos ha dado más fuerza de la que imaginas.",
   },
   {
-    image: "IMG_8433.jpg",
+    image: "photos/IMG_8433.jpg",
     kicker: "Con mucho amor",
     title: "Tu amor nos cuida",
     message:
       "Gracias por siempre demostrarnos tanto amor a mis hermanos y a mí. Nos haces sentir vistos, protegidos y cuidados de una forma que nunca olvidamos.",
   },
   {
-    image: "IMG_4982.jpg",
+    image: "photos/IMG_4982.jpg",
     kicker: "Nuestro corazón",
     title: "Tú eres nuestro hogar",
     message:
       "No importa cuánto cambie la vida, tu voz, tus abrazos y tu corazón siempre han sido el lugar al que podemos regresar.",
   },
   {
-    image: "IMG_3959.jpg",
+    image: "photos/IMG_3959.jpg",
     kicker: "Fuerte y dulce",
     title: "Tu fuerza nos inspira",
     message:
       "Nos has enseñado lo que significa seguir adelante con gracia. Tu valor, tu paciencia y tu fe han formado la persona que cada uno de nosotros está llegando a ser.",
   },
   {
-    image: "IMG_4670.jpg",
+    image: "photos/IMG_4670.jpg",
     kicker: "La reina de la familia",
     title: "Haces la vida más bonita",
     message:
       "Gracias por esas cosas que parecen pequeñas, pero significan todo: las comidas, las risas, los consejos, las oraciones y el amor que pones en todo.",
   },
   {
-    image: "IMG_7948.jpg",
+    image: "photos/IMG_7948.jpg",
     kicker: "Siempre con nosotros",
     title: "Llevamos tu amor con nosotros",
     message:
       "A donde vayamos, llevamos lo que nos enseñaste: cuidar a la familia, trabajar duro, mantenernos humildes y amar con todo el corazón.",
   },
   {
-    image: "IMG_8924.jpg",
+    image: "photos/IMG_8924.jpg",
     kicker: "Feliz Día de las Madres",
     title: "Te queremos muchísimo",
     message:
@@ -69,6 +69,13 @@ const prevButton = document.querySelector("#prevButton");
 const photoShell = document.querySelector(".photo-shell");
 
 let currentIndex = 0;
+
+function preloadSlides() {
+  slides.slice(1).forEach((slide) => {
+    const image = new Image();
+    image.src = slide.image;
+  });
+}
 
 function renderDots() {
   dots.innerHTML = "";
@@ -132,3 +139,4 @@ window.addEventListener("keydown", (event) => {
 
 renderDots();
 showSlide(0);
+preloadSlides();
