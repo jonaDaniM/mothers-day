@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Mother's Day</title>
+    <meta
+      name="description"
+      content="A Mother's Day slideshow full of love, gratitude, and family memories."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-live="polite">
+      <section class="stage" aria-label="Mother's Day photo slideshow">
+        <div class="photo-shell">
+          <img id="slideBackdrop" class="photo-backdrop" src="IMG_9198.jpg" alt="" aria-hidden="true" />
+          <img id="slidePhoto" class="photo-main" src="IMG_9198.jpg" alt="Family memory" />
+          <div class="soft-glow" aria-hidden="true"></div>
+        </div>
+
+        <article class="message-panel">
+          <p class="kicker" id="kicker">Para la mejor mamá</p>
+          <h1 id="slideTitle">Happy Mother's Day, Mom</h1>
+          <p id="slideMessage">
+            Today is for you: your love, your strength, and the way you make
+            home feel warm no matter where we are.
+          </p>
+
+          <div class="controls" aria-label="Slideshow controls">
+            <button class="icon-button" id="prevButton" type="button" aria-label="Previous slide">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button class="next-button" id="nextButton" type="button">
+              <span>Next memory</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide-footer" aria-label="Slideshow progress">
+        <p id="counter">1 / 8</p>
+        <div class="dots" id="dots"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
